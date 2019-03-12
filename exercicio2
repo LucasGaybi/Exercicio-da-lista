@@ -1,0 +1,22 @@
+<?php
+
+print("Informe dia:\n");
+$dia = (int) fgets(STDIN);
+
+print("Informe  hora:\n");
+$hora = (int) fgets(STDIN);
+
+print("Informe minuto:\n");
+$minuto = (int) fgets(STDIN);
+
+print("Informe segundo:\n");
+$segundo = (int) fgets(STDIN);
+
+$diaseg = ($dia*24)*3600;
+$horaseg = $hora*3600;
+$minutoseg =  $minuto*60;
+
+
+$somaseg = $diaseg + $horaseg + $minutoseg + $segundo;
+
+print("Total em segundos: $somaseg\n");
