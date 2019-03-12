@@ -1,0 +1,8 @@
+<?php
+
+print ("Infome o valor em metros:");
+$metros = (float) fgets(STDIN);
+
+$milimetros = $metros * 1000;
+
+print("$metros m equivale a $milimetros mm\n");
