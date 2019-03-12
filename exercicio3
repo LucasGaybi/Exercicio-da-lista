@@ -1,0 +1,14 @@
+<?php
+
+print("Informe o salário:\n");
+$salario = (float) fgets(STDIN);
+
+print("Informe a porcentagem do aumento:\n");
+$porcentagem = (float) fgets(STDIN);
+
+$aumento = ($porcentagem * $salario)/100;
+
+$novosalario = $salario + $aumento;
+
+print("Você recebeu um aumento de R$$aumento.\n");
+print("Seu novo salário é de R$$novosalario\n");
