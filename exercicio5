@@ -1,0 +1,15 @@
+<?php
+
+print("Informe a distância à percorrer:");
+$distancia = (float) fgets(STDIN);
+
+print("Informe a velocidade média esperada:");
+$velocidade = (float) fgets(STDIN);
+
+$tempo = $distancia / $velocidade;
+
+
+print("Tempo previsto da viagem: $tempo horas.");
+
+
+
