@@ -1,0 +1,8 @@
+<?php
+
+    print("Informe a temperatura em Celsius:");
+    $celsius = (int) fgets(STDIN);
+
+    $fah = ($celsius / 5) * 9 + 32;
+
+    print("Temperatura em Fahrenheit: $fah\n");
