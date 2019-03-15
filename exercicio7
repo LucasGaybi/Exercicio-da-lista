@@ -1,0 +1,14 @@
+<?php
+
+    print("Quantos dias ficou com o carro:\n");
+    $dias = (int) fgets(STDIN);
+
+    print("Kms rodados:\n");
+    $kms = (float) fgets(STDIN);
+
+    $custodias = $dias * 60;
+    $custokms = $kms * 0.15;
+    $total = $custodias + $custokms;
+
+
+    print("Total a pagar: $total\n");
