@@ -1,0 +1,15 @@
+<?ph<?php
+
+    print("Quantos cigarros você fuma por dia?:\n");
+    $cigarrosdia = (int) fgets(STDIN);
+
+    print("Há quantos anos você fuma?:\n");
+    $cigarrosano = (int) fgets(STDIN);
+
+    $cigarrosfumados = $cigarrosdia * 365 * $cigarrosano;
+    $tempoperdido = (($cigarrosfumados * 10) / 60) / 24;
+    $tempoperdido = round($tempoperdido);
+    
+
+
+    print("Por fumar $cigarrosdia cigarro(s) por dia durante $cigarrosano ano(s), você perdeu $tempoperdido dia(s) da sua vida.\n");
